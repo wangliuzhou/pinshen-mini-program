@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "日记",
+  "usingComponents": {
+    "calendar": "/components/calendar/calendar",
+    "circle":"/components/circle-progress/circle-progress"
+  }
+}

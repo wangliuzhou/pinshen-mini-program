@@ -1,0 +1,391 @@
+/* pages/foodDiary/index.wxss */
+
+.small-text-font {
+  font-family: PingFangSC-Light;
+  font-size: 20rpx;
+  color: #353535;
+}
+
+.medium-text-font {
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #b2b2b2;
+}
+
+.calendar-box.active {
+  opacity: 1;
+}
+
+.calendar-wrapper {
+  width: 100%;
+  border-top: 1px #f5f5f5 solid;
+  box-sizing: border-box;
+  font-size: 26rpx;
+  background: #fff;
+  transition: all 0.3s;
+  transform: translateY(-100%);
+}
+
+.calendar-wrapper.active {
+  transform: translateY(0%);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100rpx;
+  /* width: 100%; */
+  background: #fff;
+  padding: 0 30rpx;
+  z-index: 10000;
+}
+
+.top-jiantou {
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 100rpx;
+}
+
+.iconfont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #ed2c48;
+  width: 53rpx;
+  height: 53rpx;
+}
+
+.iconfont .left, .iconfont .right {
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 20rpx solid transparent;
+  border-bottom: 20rpx solid transparent;
+}
+
+.iconfont .left {
+  border-right: 40rpx solid transparent;
+}
+
+.iconfont .right {
+  border-left: 40rpx solid transparent;
+}
+
+.iconfont .left.color {
+  border-right-color: #ed2c48;
+}
+
+.iconfont .right.color {
+  border-left-color: #ed2c48;
+}
+
+.btn {
+  margin: 0 30rpx;
+  width: 240rpx;
+  height: 53rpx;
+  border: 1rpx solid #ed2c48;
+  border-radius: 26rpx;
+  color: #ed2c48;
+  font-size: 26rpx;
+  box-sizing: border-box;
+}
+
+.calendar-panel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  height: 80rpx;
+}
+
+.backtoday {
+  position: absolute;
+  right: 0;
+  top: 15rpx;
+  padding: 0 10rpx;
+  padding-left: 20rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border: 1px #ed2c48 solid;
+  border-right: none;
+  font-size: 28rpx;
+  border-top-left-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+  color: #ed2c48;
+  background: rgba(82, 184, 245, 0.1);
+}
+
+.date-befor, .date-after {
+  /* border: 1px red solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+  width: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  /* margin-right: 20rpx; */
+}
+
+/* .date-after {
+    margin-left: 20rpx;
+} */
+
+.calendar-panel-box {
+  display: flex;
+}
+
+.calendar-header {
+  display: flex;
+}
+
+.calendar-header view {
+  width: 100%;
+  text-align: center;
+  line-height: 80rpx;
+  color: #ed2c48;
+}
+
+.calendar-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calender-body-date-week {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px #f5f5f5 solid;
+}
+
+.date {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: #1c1c1c;
+  background: #fff;
+  line-height: 100rpx;
+}
+
+.date.active {
+  background: red;
+}
+
+.placeholder {
+  color: #a4a4a4;
+}
+
+.date-current {
+  background: #ed2c48;
+  color: #fff;
+}
+
+.data-circle {
+  position: absolute;
+  bottom: 10rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  background: #ff5a5f;
+  z-index: 2;
+}
+
+.packup {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #ed2c48;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mealName {
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #434343;
+}
+
+.mealEngry {
+  font-family: PingFangSC-Light;
+  font-size: 32rpx;
+  color: #5e5e5e;
+}
+
+.space-between-layout {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8rpx;
+}
+
+.nutrient-card {
+  background-color: white;
+  margin: 20rpx 40rpx;
+  padding: 24rpx 32rpx;
+  box-shadow: 0 12rpx 34rpx 0 rgba(0, 0, 0, 0.10);
+  border-radius: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.score-card {
+  height: 50rpx;
+  background-color: #f3465a;
+  margin: 10px 20px;
+  padding: 24rpx 32rpx;
+  box-shadow: 0 12rpx 34rpx 0 rgba(0, 0, 0, 0.10);
+  border-radius: 2%;
+  display: flex;
+  align-items: center;
+}
+
+.meal-card {
+  background-color: white;
+  margin: 10px 20px;
+  padding: 24rpx 32rpx;
+  box-shadow: 0 12rpx 34rpx 0 rgba(0, 0, 0, 0.10);
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.calorie-row {
+  margin: 32rpx;
+  justify-content: center;
+}
+
+.cpf-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30rpx;
+}
+
+.food-image {
+  width: 20vw;
+  height: 20vw;
+  background: #f1f1f1;
+}
+
+.image_container {
+  margin-top: 18rpx;
+}
+
+.add-food-image {
+  width: 10vw;
+  height: 10vw;
+  padding: 5vw;
+  background: #f1f1f1;
+}
+
+.food-image-container {
+  position: relative;
+}
+
+.top-right-delete-btn {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 2%;
+  right: 2%;
+}
+
+.food-image-collection-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.empty-footer {
+  width: 100%;
+  height: 50px;
+}
+
+.score-title {
+  color: #fff;
+  font-size: 36rpx;
+}
+
+.score-info {
+  color: #fff;
+  font-size: 20rpx;
+  padding-left: 10rpx;
+  font-family: sans-serif;
+}
+
+.score {
+  color: #fff;
+  font-size: 40rpx;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.nutrient_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.circle_info {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle_dot {
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+  background-color: #fb9126;
+}
+
+.circle_percentage {
+  position: absolute;
+  color: #353535;
+  font-size: 32rpx;
+  letter-spacing: 4rpx;
+}
+
+.circle_label {
+  color: #888;
+  font-size: 20rpx;
+  position: absolute;
+  top: 20rpx;
+}
+
+.weui-cell {
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.food_name {
+  font-size: 32rpx;
+  color: #353535;
+}
+
+.energy {
+  font-size: 26rpx;
+  color:#888888
+}
+.portion{
+  font-size: 26rpx;
+  color:#888888
+}

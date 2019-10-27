@@ -1,0 +1,10 @@
+<!--pages/foodShare/index.wxml-->
+  <view class="bg">
+  <view class="share-card" >
+    <image class="full-width-image" src="{{imageUrl}}" mode="widthFix"></image>
+  </view>
+  <view class="button-layer">
+    <button class="save-album-btn" catchtap='onSaveToAlbumBtnPressed'>保存</button>
+    <button open-type="share" class="share-btn">分享给朋友</button>
+  </view>
+  </view>

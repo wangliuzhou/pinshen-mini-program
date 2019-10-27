@@ -1,0 +1,75 @@
+/* pages/foodShare/index.wxss */
+
+.bg {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://dietlens-1258665547.cos.ap-shanghai.myqcloud.com/mini-app-image/sharing_background_pic.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+}
+
+.share-card {
+  margin-top: 28rpx;
+  background-color: white;
+  margin-bottom: 60rpx;
+  margin-left: 64rpx;
+  margin-right: 64rpx;
+  box-shadow: 0 12rpx 34rpx 0 rgba(0, 0, 0, 0.10);
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.full-width-image {
+  width: auto;
+  height: auto;
+}
+
+.button-layer {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.save-album-btn {
+  font-family: PingFangSC-Regular;
+  font-size: 36rpx;
+  color: #ff822d;
+  letter-spacing: 0.16rpx;
+  background: #fff;
+  border: 2rpx solid #ff822d;
+  border-radius: 8rpx;
+  width: 182rpx;
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 60rpx;
+  margin-left: 0rpx;
+}
+
+.share-btn {
+  background-color: #ff822d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: PingFangSC-Regular;
+  font-size: 36rpx;
+  color: #fff;
+  letter-spacing: 0.16rpx;
+  border: 2rpx solid #ff822d;
+  border-radius: 8rpx;
+  width: 278rpx;
+  height: 90rpx;
+  margin-right: 0rpx;
+  margin-left: 0rpx;
+}

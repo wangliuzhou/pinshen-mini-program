@@ -1,0 +1,71 @@
+<!--pages/report/report.wxml-->
+<!-- Start of calendar bar -->
+<view class="calendar-body">
+  <view class="calendar_bar">
+    <view wx:if="{{isPrevMonthAllowed == true}}">
+      <view bindtap="prevMonth" class="arrow-container">
+        <image class="arrow-img" src="../../images/leftArrow-selected.png" mode="widthFix"></image>
+      </view>
+    </view>
+
+    <view wx:elif="{{isPrevMonthAllowed == false}}">
+      <view class="arrow-container">
+        <image class="arrow-img" src="../../images/leftArrow.png" mode="widthFix"></image>
+      </view>
+    </view>
+
+    <view class="calendar">{{year}}年{{month}}月</view>
+
+    <view wx:if="{{isNextMonthAllowed == true}}">
+      <view bindtap="nextMonth" class="arrow-container">
+        <image class="arrow-img" src="../../images/rightArrow-selected.png" mode="widthFix"></image>
+      </view>
+    </view>
+
+    <view wx:if="{{isNextMonthAllowed == false}}">
+      <view class="arrow-container">
+        <image class="arrow-img" src="../../images/rightArrow.png" mode="widthFix"></image>
+      </view>
+    </view>
+  </view>
+  <!-- End of calendar bar -->
+
+  <!-- Start of week reports body -->
+  <view class="report-body">
+    <view class="empty-view" hidden="{{weeklyReportArr.length !== 0}}">
+      <image src="../../images/report_empty_icon.png" style='width:300rpx;height:200rpx;margin:10rpx' />
+      <view class="empty_view_text">没有文件</view>
+      <view class="empty_view_desc">请完成所有日常报告以生成每周报告</view>
+    </view>
+    <view wx:for="{{weeklyReportArr}}" wx:key="this" wx:for-index="idx">
+      <view class="body">
+        <view catchtap='onWeeklyReportClick' data-report-index="{{idx}}">
+          <view class="weekly_cells-container">
+            <view class="wrapper">
+              <view class="weekly_title">{{item.first_day}}日 - {{item.last_day}}日</view>
+
+              <view wx:if="{{item.is_read}}">
+                <view class="weekly_ready-container">
+                  <view class="dot"></view>
+                  <view class="weekly_label">本周总结报告</view>
+                </view>
+              </view>
+
+              <view wx:else>
+                <view class="weekly_ready-container">
+                  <view class="dot_ready"></view>
+                  <view class="weekly_label_ready">本周总结报告</view>
+                </view>
+              </view>
+
+            </view>
+            <view class="cell-arrow" catchtap='onWeeklyReportClick' data-report-index="{{idx}}">
+              <image src="../../images/rightArrowBlack.png" style="width:10px;height:15px" />
+            </view>
+
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
