@@ -31,13 +31,14 @@
 
 .button-layer {
   display: flex;
-  flex-direction: row;
-  justify-items: center;
-  justify-content: center;
+  /* flex-direction: row; */
+  /* justify-items: center; */
+  justify-content: space-around;
   align-items: center;
   margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
+  padding:0 20rpx;
 }
 
 .save-album-btn {
@@ -53,8 +54,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 60rpx;
-  margin-left: 0rpx;
+  /* margin-right: 60rpx;
+  margin-left: 0rpx; */
 }
 
 .share-btn {
@@ -70,6 +71,6 @@
   border-radius: 8rpx;
   width: 278rpx;
   height: 90rpx;
-  margin-right: 0rpx;
-  margin-left: 0rpx;
+  /* margin-right: 0rpx;
+  margin-left: 0rpx; */
 }

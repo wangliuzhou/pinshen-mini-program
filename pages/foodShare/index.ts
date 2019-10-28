@@ -13,6 +13,13 @@ class FoodSharePage {
     this.mealLogId = Number(option.mealId);
     this.getSharePic();
   }
+  
+  public onBackHome(){
+    wx.switchTab({
+      url:'/pages/foodDiary/index'
+      
+    })
+  }
 
   public getSharePic() {
     wx.showLoading({ title: "生成美图中..." });

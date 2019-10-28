@@ -81,7 +81,7 @@
       </view>
     </view>
   </view>
-  <button class="confirm-btn" catchtap="onConfirmPressed">确认</button>
+  <button class="confirm-btn" catchtap="onConfirmPressed">确认并生成美图</button>
   <!-- <button catchtap='onPreviewSharedImage' class="confirm-btn">分享</button> -->
   <button hidden='{{!showDeleteBtn}}' class="weui-btn confirm-btn" style='margin:32rpx;background-color:#f8f8f8;border-radius:20rpx;color:black;' type="primary" catchtap="deleteMeal">删除记录</button>
 </view>

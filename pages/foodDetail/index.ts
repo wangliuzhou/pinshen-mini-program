@@ -179,8 +179,11 @@ class FoodDetail {
   public onConfirmPressed() {
     let req = { meal_id: this.mealId };
     webAPI.ConfirmMealLog(req).then(resp => {
-      wx.navigateBack({
-        delta: 100
+      // wx.navigateBack({
+      //   delta: 100
+      // })
+      wx.navigateTo({
+        url: "/pages/foodShare/index?mealId=" + this.data.mealLogId
       })
     }).catch(err => {
       console.log(err);
